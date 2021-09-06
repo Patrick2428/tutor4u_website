@@ -4,7 +4,26 @@
 
 {% block content %}
 <h1>
-{{ user.username }}'s profile
+{{ user.get_full_name }} (@{{ user.username }})
 </h1>
+
+{% with profile=user.profile %}
+    {% if profile %}
+    <h2>
+    Type: {{ profile.persona|default:"" }}
+    </h2>
+    <div>
+    School: {{ profile.school|default:""}}
+    </div>
+    <div>
+    Grade: {{ profile.grade|default:""}}
+    </div>
+    <br>
+    <br>
+    <div>
+    Upcoming Lesson: {{profile.next_lesson|default:"None Booked"}}
+    </div>
+    {% endif %}
+{% endwith %}
 
 {% endblock %}
