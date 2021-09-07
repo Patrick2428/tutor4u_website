@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 def index(request):
     print(request.user)
     return render(request, "index.html")
@@ -11,3 +12,7 @@ def about(request):
 
 def contact(request):
     return render(request, "contact.html")
+
+
+def service(request):
+    return render(request, "service.html")

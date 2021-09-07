@@ -24,5 +24,5 @@ from . import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("t4u_website.apps.public.urls")),
-    path("accounts/", include("t4u_website.apps.accounts.urls"))
+    path("accounts/", include("t4u_website.apps.accounts.urls")),
 ]
