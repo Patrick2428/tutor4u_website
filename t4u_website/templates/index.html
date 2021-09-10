@@ -1,7 +1,26 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<h1>Template Homepage</h1>
+<!-- Masthead-->
+<header class="masthead t4u-bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <img class="masthead-avatar mb-5" src="{% static "img/bulb-white.png" %}" alt="..." />
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">Understand It </h1>
+    </div>
+</header>
+
+{% url 'public:contact' as contact_url %}
+<br>
+<div class="home-text">
+    <br>
+    <p>One-on-one tutoring lessons for anyone that requires some extra guidance in the understanding of both the fundamental and advanced topics in mathematics</p>
+    <p>These lessons cover any chosen topics in the fields of algebra, calculus, trigonometry and more on NSSCH, HIGCSE or IGCSE level </p>
+    <p>Classes will be conducted from the comfort of you home. <a href="{{contact_url}}">Book</a> your first lesson now !</p>
+    <br>
+</div>
 {% endblock %}

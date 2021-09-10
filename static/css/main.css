@@ -1,0 +1,105 @@
+:root{
+    --bs-primary-rgb: 19, 154, 199;
+    --bs-secondary-rgb: 44, 62, 80;
+}
+
+html {
+    height: 100%;
+    scroll-padding-top: calc(4.5rem - 1px);
+    /* background: rgba(var(--bs-secondary-rgb)); */
+  }
+
+#main {
+    padding-top: 7.8rem;
+    /* background: rgba(var(--bs-secondary-rgb)); */
+}
+
+@media (min-width: 992px) {
+    #main{
+      padding-top: 8.8rem;
+      /* background: rgba(var(--bs-secondary-rgb)); */
+    }
+}
+
+@font-face {
+    font-family: 'font_jaapokki';
+    src: 
+    url("fonts/jaapokki-subtract-webfont.woff") format("woff"),
+    url("fonts/jaapokki-subtract.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'font_cavier';
+    src: 
+    url("fonts/caviardreams-webfont.woff") format("woff"),
+    url("fonts/CaviarDreams.ttf") format("truetype");
+}
+
+.t4u-bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+}
+
+#nav-head{ 
+    font-size: 42px;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .2s, color .2s;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color: rgba(var(--bs-primary-rgb));
+    border-color: rgba(var(--bs-primary-rgb));
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+    background: none;
+    color: #fff;
+    border-color: rgba(var(--bs-primary-rgb));
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active:hover {
+    background: none;
+    color: rgba(var(--bs-primary-rgb));
+}
+
+@media (min-width: 992px) {
+    .masthead {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+}
+
+.masthead {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+
+.masthead .masthead-avatar {
+    width: 180px;
+    height: 200px;
+}
+
+
+.masthead {
+    background-image: url("../img/blackboard.png");
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+}
+
+.logo1{
+    height: 100px;
+    width: 250px;
+}
+
+.home-text {
+    background: rgba(var(--bs-secondary-rgb));
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 24px;
+}
+
