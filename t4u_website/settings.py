@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "t4u_website.apps.accounts",
+    "t4u_website.apps.contact",
 ]
 
 MIDDLEWARE = [

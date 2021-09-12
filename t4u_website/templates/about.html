@@ -1,7 +1,29 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}About{% endblock %}
 
 {% block content %}
-<h1>Template About</h1>
+
+<link href="{% static "css/about.css" %}" rel="stylesheet" />
+
+<div class="about-cont">  
+    <h2 class="page-section-heading text-center text-uppercase mb-0 header-light">Your Tutor</h2>
+    <!-- Icon Divider-->
+    <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+    </div>
+    <img id="tutor-img" src="{% static "img/Me.png" %}" />
+    <br>
+    <br>
+    <p>Hi, my name is Patrick, and I will be serving as both the organiser and tutor for T4U.</p> 
+    <p>I am a qualified Electrical and Electronic Engineer and have decided to offer extra tutoring lessons on the side of my profession.</p> 
+    <p>I completed my senior secondary certificate (NSSCH) at St Paul's College back in 2016. In total, I achieved five distinctions, which included Mathematics, Accounting, Science, Biology and German</p>
+    <br>
+    <p>Throughout my tutoring lessons, I offer help with solving mathematical problems and provide extra tips & tricks to master each topic.</p>
+    <p>Since Mathematics can be mind-boggling, all tutoring lessons will be adjusted to your way of learning and personalised so that you feel comfortable and confident.</p>
+</div>
+
 {% endblock %}

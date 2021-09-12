@@ -1,0 +1,15 @@
+.about-cont{
+    text-align: center;
+    background: rgba(var(--bs-secondary-rgb));
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    font-size: 20px;
+}
+
+#tutor-img{
+    width: 200px;
+    height: 230px;
+    border: 3px solid white;
+}
+

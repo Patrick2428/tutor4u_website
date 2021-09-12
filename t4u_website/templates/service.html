@@ -1,12 +1,53 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Service{% endblock %}
 
 {% block content %}
-<h1>Service</h1>
-<div>Here the services that are offered by tutor4 will be listed<div>
+
+<link href="{% static "css/service.css" %}" rel="stylesheet" />
+{% url 'contact:contact' as contact_url %}
+
+<form class="service">
+{% comment %} <img id="logo-1" src="{% static "img/logo1.png" %}" /> {% endcomment %}
+<h1 class="text-uppercase">Services</h1>
+<div class="serv-section">
+    <p>NOTE: All lessons will be conducted from the comfort of your home, however, an additional venue can be organised if requested.</p>
+    <br>
+    <h3>Mathematics: </h3>
+    <p>Tutoring is available for grades 5 to 12, and come at different price ranges.<p>
+    <p>View the Fees section below or <a href="{{contact_url}}">contact</a> me for more details. </p>
+    <br>
+    <h3>Other: </h3>
+    <p>Tutoring for other subjects, such as Science, Accounting and Biology can be organised throughout consultation.
+    <p>These additional subjects are only available for students from grades 8 to 12. 
+</div>
+<div>
 <br>
-<h1>Fees</h1>
-<div>Here the service fees will be listed<div>
-<br>
+<h1 class="text-uppercase">Fees</h1>
+<div>
+    <table class="fees-table">
+        <thead>
+        <tr>
+            <th>Grade</th>
+            <th>Cost (N$ per hour)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>5-7</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>8-10</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>11-12</td>
+            <td>250</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</form>
 {% endblock %}
