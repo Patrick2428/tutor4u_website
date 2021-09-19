@@ -147,5 +147,10 @@ LOGOUT_REDIRECT_URL = "public:index"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 DEFAULT_FROM_EMAIL = "pt.tutor4u@gmail.com"
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

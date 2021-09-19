@@ -13,3 +13,8 @@
     border: 3px solid white;
 }
 
+#pin-drop-img{
+    width: 45px;
+    height: 50px;
+    padding-right: 10px;
+}
